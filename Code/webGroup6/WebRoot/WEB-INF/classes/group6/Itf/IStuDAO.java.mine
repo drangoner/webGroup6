@@ -1,0 +1,10 @@
+package group6.Itf;
+
+import group6.Stu;
+public interface IStuDAO {
+	public boolean getStuList(String[] json,int isvalid) throws Exception;
+	public boolean getDetail(String[] json, String sid) throws Exception;
+	public boolean setValid(Stu stu,int i) throws Exception;
+	public boolean findLogin(Stu stu) throws Exception;
+	
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
+    
+<servlet>
+	<servlet-name>AdminLogin</servlet-name>
+	<servlet-class>servlet.AdminLoginServlet</servlet-class>
+</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuListServlet</servlet-name>
+    <servlet-class>servlet.StuListServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuLogin</servlet-name>
+    <servlet-class>servlet.StudentLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuDetailServlet</servlet-name>
+    <servlet-class>servlet.StuDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuSetValid</servlet-name>
+    <servlet-class>servlet.StuSetValid</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuSignInServlet</servlet-name>
+    <servlet-class>servlet.StuSignInServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentLoginServlet</servlet-name>
+    <servlet-class>servlet.StudentLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudentsByClass</servlet-name>
+    <servlet-class>servlet.GetStudentsByClass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetStudentsByMajor</servlet-name>
+    <servlet-class>servlet.GetStudentsByMajor</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuSignUpServlet</servlet-name>
+    <servlet-class>servlet.StuSignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuRegistDetailServlet</servlet-name>
+    <servlet-class>servlet.StuRegistDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuUpdateServlet</servlet-name>
+    <servlet-class>servlet.StuUpdateServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+<servlet-mapping>
+	<servlet-name>AdminLogin</servlet-name>
+	<url-pattern>/admin/LoginServlet</url-pattern>
+</servlet-mapping>
+
+
+ <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+ 
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuListServlet</servlet-name>
+    <url-pattern>/servlet/StuListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuDetailServlet</servlet-name>
+    <url-pattern>/servlet/StuDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuSetValid</servlet-name>
+    <url-pattern>/servlet/StuSetValid</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuSignInServlet</servlet-name>
+    <url-pattern>/servlet/StuSignInServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>StudentLoginServlet</servlet-name>
+    <url-pattern>/servlet/StudentLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudentsByClass</servlet-name>
+    <url-pattern>/servlet/GetStudentsByClass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetStudentsByMajor</servlet-name>
+    <url-pattern>/servlet/GetStudentsByMajor</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>StuSignUpServlet</servlet-name>
+    <url-pattern>/servlet/StuSignUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuRegistDetailServlet</servlet-name>
+    <url-pattern>/servlet/StuRegistDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuUpdateServlet</servlet-name>
+    <url-pattern>/servlet/StuUpdateServlet</url-pattern>
+  </servlet-mapping>
+
+
+<filter>
+	<filter-name>session</filter-name>
+	<filter-class>filter.LoginFilter</filter-class>
+</filter>
+
+
+<filter-mapping>
+	<filter-name>session</filter-name>
+        <url-pattern>/admin/html/*</url-pattern>
+</filter-mapping>
+</web-app>  
